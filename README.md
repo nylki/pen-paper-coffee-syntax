@@ -7,4 +7,10 @@ The overall colors are inspired by the soft beige paper you would find in a note
 Although the theme was designed for markdown usage, I paid attention that it still looks good and clear if you open other documents (eg. javascript, C).
 
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
+
+![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_2.png)
+
+![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_3.png)
+
+![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
