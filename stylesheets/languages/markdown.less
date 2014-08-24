@@ -1,0 +1,113 @@
+
+.markup {
+  &.changed {
+    color: @purple;
+  }
+
+  &.deleted {
+    color: @red;
+  }
+
+  &.italic {
+    color: @emphasize-color;
+    font-style: italic;
+  }
+
+  &.bold {
+  color: @bold-color;
+  font-weight: bold;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @blue;
+  }
+
+  &.inserted {
+    color: @green;
+  }
+
+
+  &.list {
+    color: @list-color;
+    font-weight: bold;
+  }
+
+  &.quote {
+    color: @quote-color;
+  }
+
+  &.raw.inline {
+    color: @green;
+  }
+
+  &.heading {
+
+  }
+}
+
+
+
+ .source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @heading-ink;
+    position: relative;
+    left: 0px;
+
+    &.heading-1 {
+      font-size: 145%;
+      top: -8px;
+    }
+
+    &.heading-2 {
+      font-size:130%;
+      top: -6px;
+    }
+
+    &.heading-3 {
+      font-size:115%;
+      top: -3px;
+    }
+  }
+
+}
+
+.gfm .markup.underline {
+  text-decoration: underline;
+}
+
+.gfm .markup.strike {
+  text-decoration: line-through;
+}
+
+
+.gfm.quote {
+  color: @quote-color;
+  font-style: italic;
+
+}
+
+.gfm.variable {
+
+}
+
+
+.gfm.entity {
+  color: @light-ink;
+}
+
+.gfm.username{
+  // name after @ in citation
+  color: @citation-name-color;
+}
+
+// citation
+.gfm.mention{
+  // @ symbol before citation
+  color: @citation-symbol-color;
+}
+
+.gfm.list {
+  color: @list-color;
+  font-weight: bold;
+}

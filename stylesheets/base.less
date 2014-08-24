@@ -1,0 +1,311 @@
+@import "syntax-variables";
+
+.editor-colors {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+    margin-right: 2.5em;
+
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-ink;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+.editor .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+.editor .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.comment {
+  color: @comment-ink;
+}
+
+.entity {
+  &.name.type {
+    color: @light-orange;
+    text-decoration: underline;
+  }
+
+  &.other.inherited-class {
+    color: @green;
+  }
+}
+
+.keyword {
+  color: @cyan;
+
+  &.control {
+    color: @cyan;
+  }
+
+  &.operator {
+    color: darken(@cyan, 20%);
+  }
+
+  &.other.special-method {
+    color: @blue;
+  }
+
+  &.other.unit {
+    color: @green;
+  }
+}
+
+.storage {
+  color: @purple;
+}
+
+.constant {
+  color: @orange;
+
+  &.character.escape {
+    color: @cyan;
+  }
+
+  &.numeric {
+    color: @orange;
+  }
+
+  &.other.color {
+    color: @cyan;
+  }
+
+  &.other.symbol {
+    color: @green;
+  }
+}
+
+.variable {
+  color: @blue;
+
+  &.interpolation {
+    color: darken(@blue, 10%);
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+}
+
+.invalid.illegal {
+  background-color: @red;
+  color: @syntax-background-color;
+}
+
+.string {
+
+&.interpolated{
+  background-color: rgba(255, 255, 0, 0.07);
+}
+
+&.quoted{
+    background-color: rgba(255, 255, 0, 0.07);
+    color: @blue;
+}
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded {
+      color: @orange;
+    }
+  }
+
+  &.other.link {
+    color: @red;
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @light-ink;
+    }
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+
+    }
+
+
+    &.heading,
+    &.identity {
+      color: @blue;
+    }
+
+    &.bold {
+      color: bold-color;
+      font-style: bold;
+    }
+
+
+  }
+
+  &.section.embedded {
+    color: darken(@red, 10%);
+  }
+
+}
+
+.support {
+  &.class {
+    color: @light-orange;
+  }
+
+  &.function  {
+    color: @cyan;
+
+    &.any-method {
+      color: @red;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @red;
+  }
+
+  &.name.class, &.name.type.class {
+    color: @light-orange;
+  }
+
+  &.name.section {
+    color: @red;
+  }
+
+  &.name.tag {
+    color: @red;
+    text-decoration: underline;
+  }
+
+  &.other.attribute-name {
+    color: @orange;
+
+    &.id {
+      color: @blue;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @light-orange;
+  }
+
+  &.brace{
+    color: @red;
+  }
+
+  &.link {
+    color: @orange;
+  }
+
+  &.require {
+    color: @blue;
+  }
+
+  &.selector {
+    color: @orange;
+  }
+
+  &.separator {
+    background-color: @ink;
+    color: @syntax-text-color;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
+}
+
+.editor.mini .scroll-view {
+  padding-left: 1px;
+}
+
+
+/*---------------------------------------
+ below: optional extra stuff for addon packages
+-----------------------------------------*/
+
+//highlight-selected
+.highlights {
+.highlight-selected .region {
+border-radius: 4px;
+box-sizing: content-box;
+padding: 0 1px 0 0;
+margin: -1px 0 0 -1px;
+background-color: transparent;
+border-width: 1.5px;
+border-style: dashed;
+}
+
+.bracket-matcher {
+border: 5px solid rgba(241, 190, 247, 0.61);
+position: absolute;
+}
+
+// Light theme box (set in settings)
+.highlight-selected.light-theme .region {
+border-color: rgba(238, 11, 143, 0.8);
+
+}
+// Light theme background (set in settings)
+.highlight-selected.light-theme.background .region {
+background-color: rgba(236, 13, 132, 0.35);
+}
+}
