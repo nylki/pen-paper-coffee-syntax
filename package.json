@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A syntax theme specifically for writing papers in markdown. Featuring a paper like color scheme and increased font-size for headings",
-  "repository": "https://github.com/nylki/PenPaperCoffee-atom-syntax",
+  "repository": "https://github.com/nylki/pen-paper-coffee-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
