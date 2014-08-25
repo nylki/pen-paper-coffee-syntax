@@ -1,7 +1,7 @@
 {
   "name": "penpapercoffee-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Atom syntax theme specifically for writing papers in markdown.",
   "repository": "https://github.com/nylki/PenPaperCoffee-atom-syntax",
   "license": "MIT",
