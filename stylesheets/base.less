@@ -18,8 +18,11 @@
     color: @syntax-indent-guide-color;
   }
 
+
+
   .invisible-character {
-    color: @syntax-invisible-character-color;
+    color: @invisible-ink;
+    //color: lighten(@comment-ink, 5%);
   }
 
   .gutter {
@@ -40,6 +43,8 @@
     }
   }
 
+
+
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
@@ -47,11 +52,11 @@
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @comment-ink;
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @syntax-text-color;
   }
 
   .selection .region {
@@ -171,7 +176,7 @@
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-ink;
+      color: darken(@comment-ink,10%);
     }
 
     &.string,
