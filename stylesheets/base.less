@@ -23,6 +23,9 @@
     //color: lighten(@comment-ink, 5%);
   }
 
+
+
+
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -83,7 +86,8 @@
   color: @cyan;
 
   &.control {
-    color: @cyan;
+    color: @ink;
+    font-weight: bold;
   }
 
   &.operator {
@@ -92,6 +96,11 @@
 
   &.other.special-method {
     color: @blue;
+  }
+
+  &.other.attribute-name {
+  color: @ink;
+  font-weight: bold;
   }
 
   &.other.unit {
@@ -206,7 +215,7 @@
     color: @ink;
 
     &.any-method {
-      color: @red;
+      color: @light-ink;
     }
   }
 }
@@ -245,6 +254,10 @@
 
   &.brace{
     color: @red;
+  }
+
+  &.method{
+  color:@very-light-ink;
   }
 
   &.link {
