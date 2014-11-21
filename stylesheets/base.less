@@ -1,11 +1,11 @@
 @import "syntax-variables";
 
-.editor-colors {
+.editor-colors :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor {
+.editor :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -282,7 +282,7 @@
   color: @syntax-text-color;
 }
 
-.editor.mini .scroll-view {
+.editor.mini .scroll-view :host {
   padding-left: 1px;
 }
 
