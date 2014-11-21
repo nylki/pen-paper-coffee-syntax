@@ -1,43 +1,36 @@
 @import "syntax-variables";
 
+
+@import "syntax-variables";
 .editor-colors, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
-
 .editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
-
-
+  .bracket-matcher{
+    position: absolute;
+  }
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
-
   .indent-guide {
     color: @syntax-indent-guide-color;
   }
-
   .invisible-character {
     color: @invisible-ink;
     //color: lighten(@comment-ink, 5%);
   }
-
-
-
-
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
-    margin-right: 2.5em;
-
-
+    margin-right: 2em;
     .line-number {
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
         color: @syntax-gutter-text-color-selected;
       }
-
       &.cursor-line-no-selection {
         color: @syntax-gutter-text-color-selected;
       }
@@ -82,6 +75,7 @@
   }
 
   &.operator {
+    font-weight: bold;
     color: darken(@cyan, 20%);
   }
 
@@ -170,6 +164,10 @@
       color: darken(@comment-ink,10%);
     }
 
+    &.tag{
+      color: @red;
+    }
+
     &.string,
     &.variable,
     &.parameters,
@@ -185,12 +183,13 @@
 
     &.bold {
       color: bold-color;
-      font-style: bold;
+      font-weight: bold;
     }
-
-
   }
 
+  &.terminator{
+    font-weight: bold;
+  }
   &.section.embedded {
     color: darken(@red, 10%);
   }
@@ -203,11 +202,9 @@
   }
 
   &.function  {
-    color: @ink;
 
-    &.any-method {
-      color: @light-ink;
-    }
+    color:@light-ink;
+    color: darken(@light-orange, 20%);
   }
 }
 
@@ -226,7 +223,6 @@
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.other.attribute-name {
@@ -244,7 +240,7 @@
   }
 
   &.brace{
-    color: @red;
+
   }
 
   &.method{
@@ -292,10 +288,8 @@ border-width: 1.5px;
 border-style: dashed;
 }
 
-.bracket-matcher {
-border: 5px solid rgba(241, 190, 247, 0.61);
-position: absolute;
-}
+
+
 
 // Light theme box (set in settings)
 .highlight-selected.light-theme .region {
