@@ -9,9 +9,7 @@
 .editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
-  .bracket-matcher{
-    position: absolute;
-  }
+
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
@@ -49,6 +47,11 @@
   .selection .region {
     background-color: @syntax-selection-color;
   }
+} // .editor bracket close
+
+.bracket-matcher{
+  border: 5px solid rgba(241, 190, 247, 0.61);
+  position: absolute;
 }
 
 .comment {

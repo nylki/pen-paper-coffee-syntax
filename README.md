@@ -6,6 +6,8 @@ The overall colors are inspired by the soft beige paper you would find in a note
 
 Although the theme was designed for markdown usage, I paid attention that it still looks good and clear if you open other documents (eg. javascript, C).
 
+When writing, I find a great package to use together with this theme for citing stuff from a bibtex file is [autocomplete bibtex](https://github.com/apcshields/autocomplete-bibtex). It's a great help when combining it with [pandoc](https://github.com/jgm/pandoc) for pdf & latex export from markdown.
+
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
 
