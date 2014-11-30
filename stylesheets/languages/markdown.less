@@ -36,8 +36,13 @@
     color: @quote-color;
   }
 
-  &.raw.inline {
-    color: @green;
+  &.raw{
+    background-color: rgba(255, 255, 255, 0.65);
+    color: @dark-ink;
+
+    &.inline {
+      color: @green;
+    }
   }
 
   &.heading {
@@ -84,6 +89,7 @@
 .gfm.quote {
   color: @quote-color;
   font-style: italic;
+
 
 }
 
