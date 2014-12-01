@@ -32,10 +32,6 @@
     font-weight: bold;
   }
 
-  &.quote {
-    color: @quote-color;
-  }
-
   &.raw{
     background-color: rgba(255, 255, 255, 0.65);
     color: @dark-ink;
@@ -45,15 +41,13 @@
     }
   }
 
-  &.heading {
-
+  &.strike {
+    text-decoration: line-through;
   }
-}
+  &.underline {
+    text-decoration: underline;
+  }
 
-
-
- .source.gfm .markup {
-  -webkit-font-smoothing: auto;
   &.heading {
     color: @heading-ink;
     position: relative;
@@ -75,18 +69,19 @@
     }
   }
 
-}
 
-.gfm .markup.underline {
-  text-decoration: underline;
-}
-
-.gfm .markup.strike {
-  text-decoration: line-through;
 }
 
 
-.gfm.quote {
+
+ .source.pfm .markup{
+  &.math{
+    color: green;
+  }
+}
+
+
+.quote {
   color: @quote-color;
   font-style: italic;
 
