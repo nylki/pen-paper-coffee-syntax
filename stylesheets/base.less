@@ -60,8 +60,7 @@
 
 .entity {
   &.name.type {
-    color: @light-orange;
-    font-weight: bold;
+    color: @cyan;
   }
 
   &.other.inherited-class {
@@ -97,18 +96,18 @@
 }
 
 .storage {
-  color: @purple;
+  color: @blue;
 }
 
 .constant {
-  color: @orange;
+  color: @red;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @orange;
+    color: @red;
   }
 
   &.other.color {
@@ -140,12 +139,14 @@
 .string {
 
 &.interpolated{
-  background-color: rgba(255, 255, 0, 0.07);
+  background-color: rgba(255, 255, 0, 0.06);
 }
 
 &.quoted{
-    background-color: rgba(255, 255, 0, 0.07);
-    color: @blue;
+    background-color: rgba(255, 255, 0, 0.06);
+    color: @quote-color;    
+  //  color: @very-light-ink;
+  //color: @red;
 }
 
   &.regexp {
@@ -198,23 +199,24 @@
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @cyan;
+   //color: @very-light-ink;
   }
 
   &.function  {
 
-    color:@light-ink;
-    color: darken(@light-orange, 20%);
+    color:@orange;
+
   }
 }
 
 .entity {
   &.name.function {
-    color: @red;
+    color: @orange;
   }
 
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @ink;
   }
 
   &.name.section {
@@ -222,7 +224,7 @@
   }
 
   &.name.tag {
-    color: @red;
+    color: @blue;
   }
 
   &.other.attribute-name {
@@ -236,7 +238,7 @@
 
 .meta {
   &.class {
-    color: ink;
+    color: @ink;
   }
 
   &.brace{
