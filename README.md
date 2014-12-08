@@ -15,4 +15,4 @@ When writing, I find a great package to use together with this theme for citing 
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_3.png)
 
-![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
+![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.jpg)
