@@ -50,8 +50,7 @@
 } // .editor bracket close
 
 .bracket-matcher{
-  border: 5px solid rgba(241, 190, 247, 0.61);
-  position: absolute;
+  background-color: rgba(237, 169, 251, 0.61);
 }
 
 .comment {
@@ -69,11 +68,11 @@
 }
 
 .keyword {
-  color: @cyan;
+  color: @green;
 
   &.control {
     color: @ink;
-    font-weight: bold;
+    font-weight: 600; // slightly bolder than normal
   }
 
   &.operator {
@@ -103,7 +102,7 @@
   color: @red;
 
   &.character.escape {
-    color: @cyan;
+    color: @green;
   }
 
   &.numeric {
@@ -111,7 +110,7 @@
   }
 
   &.other.color {
-    color: @cyan;
+    color: @green;
   }
 
   &.other.symbol {
@@ -127,7 +126,7 @@
   }
 
   &.parameter.function {
-    color: @syntax-text-color;
+
   }
 }
 
@@ -144,7 +143,7 @@
 
 &.quoted{
     background-color: rgba(255, 255, 0, 0.06);
-    color: @quote-color;    
+    color: @quote-color;
   //  color: @very-light-ink;
   //color: @red;
 }
@@ -169,7 +168,7 @@
     }
 
     &.tag{
-      color: @red;
+      color: darken(@red, 10%);
     }
 
     &.string,
@@ -262,7 +261,6 @@
   }
 
   &.separator {
-    background-color: @ink;
     color: @syntax-text-color;
   }
 }
