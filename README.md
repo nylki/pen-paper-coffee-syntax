@@ -2,7 +2,7 @@
 
 *Pen Paper Coffee* is a syntax theme for the text editor [atom](http://atom.io/), which is designed specifically for writing papers, essays etc. in [markdown](https://en.wikipedia.org/wiki/Markdown).
 The theme features increased font-sizes for each level of headers, several useful, but not distracting syntax highlightings.
-The overall colors are inspired by the soft beige paper you would find in a notebook. While the ink (text color) is a dark blue, all quotes and citations are in a warm brownish orange to contrast them better to your own words. In the screenshots you see, I set a line height of 1.4 or 1.5 in atoms settings.
+The overall colors are inspired by the soft beige paper you would find in a notebook. While the ink (text color) is a dark blue, all quotes and citations are in a warm brownish orange to contrast them better to your own words. When writing text, not code, I usually set a line height of 1.4 or 1.5 in atoms settings, as you can see in the sample screenshots.
 
 Although the theme was designed for markdown usage, I paid attention that it still looks good and clear if you open other documents (eg. javascript, C).
 
