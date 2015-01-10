@@ -1,7 +1,5 @@
 @import "syntax-variables";
 
-
-@import "syntax-variables";
 .editor-colors, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
@@ -57,6 +55,8 @@
   color: @comment-ink;
 }
 
+
+
 .entity {
   &.name.type {
     color: @cyan;
@@ -96,6 +96,10 @@
 
 .storage {
   color: @blue;
+  &.todo {
+    color: @purple;
+    background-color: rgba(255, 255, 0, 0.06);
+  }
 }
 
 .constant {
@@ -138,11 +142,12 @@
 .string {
 
 &.interpolated{
-  background-color: rgba(255, 255, 0, 0.06);
+  background-color: rgba(255, 204, 0, 0.03);
 }
 
 &.quoted{
-    background-color: rgba(255, 255, 0, 0.06);
+
+    background-color: rgba(255, 204, 0, 0.03);
     color: @quote-color;
   //  color: @very-light-ink;
   //color: @red;
@@ -223,6 +228,10 @@
   }
 
   &.name.tag {
+    color: @blue;
+  }
+
+  &.name.label {
     color: @blue;
   }
 
