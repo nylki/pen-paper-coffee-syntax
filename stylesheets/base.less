@@ -279,6 +279,21 @@
 }
 
 
+//create space for H1 at top of document
+atom-text-editor:not(.mini),
+atom-text-editor:not(.mini)::shadow{
+    .gutter,
+    .scroll-view {
+      padding-top: 4px;
+      .line-number-0 {
+        padding-top: 4px;
+        top: -4px !important; //overrule inline style
+      }
+
+  }
+}
+
+
 
 
 /*---------------------------------------
