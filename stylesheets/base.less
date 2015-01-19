@@ -1,5 +1,9 @@
 @import "syntax-variables";
 
+.editor-colors, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
 atom-text-editor,
 atom-text-editor::shadow, :host {
   background-color: @syntax-background-color;
@@ -44,7 +48,7 @@ atom-text-editor::shadow, :host {
   }
 } // .editor bracket close
 
-.bracket-matcher .region{
+.bracket-matcher{
   background-color: rgba(237, 169, 251, 0.61);
 }
 
