@@ -23,6 +23,9 @@ atom-text-editor::shadow, :host {
       background-color: @syntax-gutter-background-color;
       color: @syntax-gutter-text-color;
 
+      // add a small margin right to the gutter
+      margin-right: 0.75em;
+
       .line-number {
         &.cursor-line {
           background-color: @syntax-gutter-background-color-selected;
@@ -34,13 +37,17 @@ atom-text-editor::shadow, :host {
       }
     }
 
+    .line-number.folded, .line-number:after, .fold-marker:after {
+      color: @light-ink;
+    }
+
+    // add a bigger margin right to the gutter if markdown
+    atom-text-editor[data-grammar="source gfm"]::shadow .gutter{
+      margin-right: 2.0em;
+    }
 
 
-  .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
-    color: @light-ink;
-  }
+
 
 
   .selection .region {
@@ -277,19 +284,6 @@ atom-text-editor::shadow, :host {
 
 .none {
   color: @syntax-text-color;
-}
-
-
-// add a small margin right to the gutter
-atom-text-editor,
-atom-text-editor::shadow .gutter{
-  margin-right: 0.75em;
-}
-
-// add a bigger margin right to the gutter if markdown
-atom-text-editor[data-grammar="source gfm"],
-atom-text-editor[data-grammar="source gfm"]::shadow .gutter{
-  margin-right: 2.0em;
 }
 
 //create space for H1 at top of document
