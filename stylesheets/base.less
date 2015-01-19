@@ -4,7 +4,8 @@
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
-.editor, :host {
+atom-text-editor,
+atom-text-editor::shadow, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -16,22 +17,22 @@
   }
   .invisible-character {
     color: @invisible-ink;
-    //color: lighten(@comment-ink, 5%);
   }
-  .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
-    margin-right: 2em;
-    .line-number {
-      &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
-      }
-      &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+
+    .gutter {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color;
+
+      .line-number {
+        &.cursor-line {
+          background-color: @syntax-gutter-background-color-selected;
+          color: @syntax-gutter-text-color-selected;
+        }
+        &.cursor-line-no-selection {
+          color: @syntax-gutter-text-color-selected;
+        }
       }
     }
-  }
 
 
 
@@ -279,9 +280,21 @@
 }
 
 
+// add a small margin right to the gutter
+atom-text-editor,
+atom-text-editor::shadow .gutter{
+  margin-right: 0.75em;
+}
+
+// add a bigger margin right to the gutter if markdown
+atom-text-editor[data-grammar="source gfm"],
+atom-text-editor[data-grammar="source gfm"]::shadow .gutter{
+  margin-right: 2.5em;
+}
+
 //create space for H1 at top of document
-atom-text-editor:not(.mini),
-atom-text-editor:not(.mini)::shadow{
+atom-text-editor[data-grammar="source gfm"]:not(.mini),
+atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
     .gutter,
     .scroll-view {
       padding-top: 4px;
