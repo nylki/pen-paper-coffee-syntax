@@ -287,8 +287,8 @@ atom-text-editor::shadow .gutter{
 }
 
 // add a bigger margin right to the gutter if markdown
-atom-text-editor[data-grammar="source gfm"],
-atom-text-editor[data-grammar="source gfm"]::shadow .gutter{
+atom-text-editor[data-grammar="source gfm, pfm"],
+atom-text-editor[data-grammar="source gfm, pfm"]::shadow .gutter{
   margin-right: 2.5em;
 }
 
@@ -297,10 +297,10 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini),
 atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
     .gutter,
     .scroll-view {
-      padding-top: 1em;
+      padding-top: 0.5em;
       .line-number-0 {
-        padding-top: 1em;
-        top: -1em !important; //overrule inline style
+        padding-top: 0.5em;
+        top: -0.5em !important; //overrule inline style
       }
 
   }
