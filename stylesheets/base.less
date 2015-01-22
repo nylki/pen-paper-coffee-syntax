@@ -37,16 +37,13 @@ atom-text-editor::shadow, :host {
       }
     }
 
+
+
+
+
     .line-number.folded, .line-number:after, .fold-marker:after {
       color: @light-ink;
     }
-
-    // add a bigger margin right to the gutter if markdown
-    atom-text-editor[data-grammar="source gfm"]::shadow .gutter{
-      margin-right: 2.0em;
-    }
-
-
 
 
 
@@ -62,8 +59,6 @@ atom-text-editor::shadow, :host {
 .comment {
   color: @comment-ink;
 }
-
-
 
 .entity {
   &.name.type {
@@ -157,8 +152,6 @@ atom-text-editor::shadow, :host {
 
     background-color: rgba(255, 204, 0, 0.03);
     color: @quote-color;
-  //  color: @very-light-ink;
-  //color: @red;
 }
 
   &.regexp {
@@ -286,6 +279,9 @@ atom-text-editor::shadow, :host {
   color: @syntax-text-color;
 }
 
+
+// special:
+
 //create space for H1 at top of document
 atom-text-editor[data-grammar="source gfm"]:not(.mini),
 atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
@@ -299,9 +295,6 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
 
   }
 }
-
-
-
 
 /*---------------------------------------
  below: optional extra stuff for addon packages
@@ -319,9 +312,6 @@ border-width: 1.5px;
 border-style: dashed;
 }
 
-
-
-
 // Light theme box (set in settings)
 .highlight-selected.light-theme .region {
 border-color: rgba(238, 11, 143, 0.8);
@@ -331,4 +321,11 @@ border-color: rgba(238, 11, 143, 0.8);
 .highlight-selected.light-theme.background .region {
 background-color: rgba(236, 13, 132, 0.35);
 }
+}
+
+// add a bigger margin right to the gutter if markdown
+// for regular margin for other files, see above, where general
+// gutter colors are defined
+atom-text-editor[data-grammar="source gfm"]::shadow .gutter {
+    margin-right:2em;
 }
