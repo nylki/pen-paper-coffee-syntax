@@ -38,9 +38,6 @@ atom-text-editor::shadow, :host {
     }
 
 
-
-
-
     .line-number.folded, .line-number:after, .fold-marker:after {
       color: @light-ink;
     }
@@ -287,10 +284,10 @@ atom-text-editor[data-grammar="source gfm"]:not(.mini),
 atom-text-editor[data-grammar="source gfm"]:not(.mini)::shadow{
     .gutter,
     .scroll-view {
-      padding-top: 0.5em;
+      padding-top: 0.75em;
       .line-number-0 {
-        padding-top: 0.5em;
-        top: -0.5em !important; //overrule inline style
+        padding-top: 0.75em;
+        top: -0.75em !important; //overrule inline style
       }
 
   }
