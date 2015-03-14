@@ -60,11 +60,7 @@ $$ E = mc^2 $$
 
 **The following are not math**
 
-There should be no space between the dollar sign and the inline-math.
-
-$ x \subset y$
-
-$x \subset y $
+There should be no space between the dollar sign and the inline-math: $1000; $x \subset y $
 
 ### Inline HTML
 
