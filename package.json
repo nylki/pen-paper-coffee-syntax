@@ -7,5 +7,12 @@
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
-  }
+  },
+  "keywords": [
+    "markdown",
+    "light",
+    "brown",
+    "writing",
+    "citing"
+  ]
 }
