@@ -1,0 +1,53 @@
+// These colors are specific to the theme. Do not use in a package!
+
+@cursor-color: rgb(30, 30, 8);
+
+@comment-ink: rgb(156, 163, 176);
+@invisible-ink: rgb(169, 193, 214);
+@very-light-ink :rgb(110, 125, 170);
+@light-ink:      rgb(37, 95, 147);
+@ink:            rgb(43, 63, 106);
+@dark-ink:       #2b140b;
+
+@heading-ink: @dark-ink;
+
+@emphasize-color:   rgb(8, 123, 172);
+@bold-color:        darken(@emphasize-color, 10%);
+
+
+@quote-color:         rgb(121, 75, 22);
+@quote-support-color: @very-light-ink;
+
+@citation-symbol-color: rgba(205, 118, 42, 0.43);
+@citation-name-color: rgb(170, 92, 8);
+
+
+@heftstreifen: #d0c8be;
+@heftstreifen-selected: darken(@heftstreifen, 30%);
+
+
+
+@paperwhite:  #f7f4ef;
+@text-selection-color: darken(@paperwhite, 15%);
+
+@list-color:    #e24129;
+
+@cyan:          #379566;
+@blue:          #5e78e1;
+@purple:        #8100c6;
+@green:         #919a2f;
+@red:            #c16161;
+@orange:        #d08e25;
+@light-orange: #e3a92d;
+
+
+ // alternative colors
+/*
+@cyan:         #35a766;
+@blue:         #5977d3;
+@purple:       #8100c6;
+@green:        #8fad06;
+@red:          #d24d4d;
+@orange:       #cd8e21;
+@light-orange: #e3a92d;
+*/
