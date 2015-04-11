@@ -8,10 +8,14 @@ Although this theme was designed for markdown usage, I paid attention that it st
 When you want to cite stuff from eg. a bibtex file, I find a great package to use together with this theme is [autocomplete bibtex](https://github.com/apcshields/autocomplete-bibtex). It's a great help when combining it with [pandoc](https://github.com/jgm/pandoc) for pdf & latex export from markdown.
 
 
-![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
+![markdown with zen mode](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
+
+![css screenshot](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
+
+The screenshots below  are a bit outdated now, (the gutter color is lighter now, as the screenshots above):
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_2.png)
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_3.png)
 
-![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
+
