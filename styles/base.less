@@ -12,9 +12,11 @@ atom-text-editor::shadow, :host {
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
+
   .indent-guide {
     color: @syntax-indent-guide-color;
   }
+
   .invisible-character {
     color: @invisible-ink;
   }
@@ -24,9 +26,10 @@ atom-text-editor::shadow, :host {
       color: @syntax-gutter-text-color;
 
       // add a small margin right to the gutter
-      margin-right: 0.75em;
+      margin-right: 0.8em;
 
       .line-number {
+        -webkit-font-smoothing: antialiased;
         &.cursor-line {
           background-color: @syntax-gutter-background-color-selected;
           color: @syntax-gutter-text-color-selected;
