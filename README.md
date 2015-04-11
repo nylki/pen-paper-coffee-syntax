@@ -5,6 +5,8 @@ The overall colors are inspired by the soft beige paper you would find in a note
 
 Although this theme was designed for markdown usage, I paid attention that it still looks good and clear with other documents (eg. html, javascript, C).
 
+The screenshots without gutter and text centering had [Zen](https://atom.io/packages/zen) installed, if you like to have centered text but still see the gutter, treeview and tabs [typewriter](https://atom.io/packages/typewriter) might be for you.
+
 When you want to cite stuff from eg. a bibtex file, I find a great package to use together with this theme is [autocomplete bibtex](https://github.com/apcshields/autocomplete-bibtex). It's a great help when combining it with [pandoc](https://github.com/jgm/pandoc) for pdf & latex export from markdown.
 
 
