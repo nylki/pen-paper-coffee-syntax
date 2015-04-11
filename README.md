@@ -10,6 +10,18 @@ The screenshots without gutter and text centering had [Zen](https://atom.io/pack
 When you want to cite stuff from eg. a bibtex file, I find a great package to use together with this theme is [autocomplete bibtex](https://github.com/apcshields/autocomplete-bibtex). It's a great help when combining it with [pandoc](https://github.com/jgm/pandoc) for pdf & latex export from markdown.
 
 
+### changes
+#### 11. April 2015
+I changed the gutter to a lighter brown, which is much more pleasing, atleast to my eyes. If you prefer the darker gutter, just comment out and uncomment the following lines in `colors.less` to your liking:
+```.less
+// gutter colors
+@heftstreifen: rgb(224, 218, 211);
+
+//@heftstreifen: rgb(202, 193, 186); //old darker gutter
+```
+
+### screenshots
+
 ![markdown with zen mode](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
 
 ![css screenshot](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
