@@ -30,4 +30,3 @@ I changed the gutter to a lighter brown, which is much more pleasing, atleast to
 
 //@heftstreifen: rgb(202, 193, 186); //old darker gutter
 ```
-

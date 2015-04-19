@@ -33,7 +33,7 @@
   }
 
   &.raw{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(245, 250, 252, 0.65);
     color: @dark-ink;
 
     &.inline {
@@ -48,30 +48,45 @@
     text-decoration: underline;
   }
 
+
+
   &.heading {
     color: @heading-ink;
     font-weight: normal;
     position: relative;
 
+    // marker of headings
+    &.marker {
+      color: fade(@heading-ink, 40%);
+    }
+
     &.heading-1 {
       font-size: 140%;
       bottom: 0.35em;
+      opacity:1.0;
     }
 
     &.heading-2 {
       font-size:125%;
       bottom: 0.25em;
+      opacity:0.95;
+
     }
 
     &.heading-3 {
       font-size:115%;
       bottom: 0.15em;
+      opacity:0.90;
+
     }
 
-    &.heading-4 {
+    &.heading-4, &.heading-5, &.heading-6 {
       font-size:105%;
       bottom: 0.05em;
+      opacity:0.85;
     }
+
+
   }
 
 
