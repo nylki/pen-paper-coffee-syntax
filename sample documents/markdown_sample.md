@@ -17,8 +17,7 @@ As somebody said in the book [@randomCitation2014, p.22]:
 ### A heading
 She packed her seven *versalia*, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown *Bookmarksgrove*, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. Another quote:
 
->"The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild *Question Marks* and devious Semikoli, but the Little Blind Text didn’t listen."
-
+> "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild *Question Marks* and devious Semikoli, but the Little Blind Text didn’t listen."
 
 #### Important paragraph
 Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A bold **river** named Duden flows by their place and supplies it with the necessary regelialia. ~~Here is some stroked text.~~
