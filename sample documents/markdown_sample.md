@@ -1,5 +1,5 @@
 
-#Random Article
+# Random Article
 Far far away, behind the word mountains, far from the countries *Vokalia* and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the codeast of the *Semantics*, a large language ocean.
 And here is a [link](https://github.com/nylki/PenPaperCoffee-atom-syntax)
 just for you. Now lets go over to some quotes and citations:
@@ -7,7 +7,7 @@ just for you. Now lets go over to some quotes and citations:
 
 ## On Rivers of Words
 ### First part
-A small river named Duden flows by their place and supplies it with the necessary **regelialia**. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.[see @randomCitation2014]
+A small river named Duden flows by their place and supplies it with the necessary *regelialia*. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.[see @randomCitation2014]
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 As somebody said in the book [@randomCitation2014, p.22]:
 
