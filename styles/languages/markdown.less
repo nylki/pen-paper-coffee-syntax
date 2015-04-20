@@ -1,165 +1,130 @@
 .markup {
-  &.changed {
-    color: @purple;
-  }
-
-  &.deleted {
-    color: @red;
-  }
-
-  &.italic {
-    color: @emphasize-color;
-    font-style: italic;
-  }
-
-  &.bold {
-  color: @bold-color;
-  font-weight: bold;
-  }
-
-
-
-
-
-
-
-  &.heading .punctuation.definition.heading {
-    color: @blue;
-  }
-
-  &.inserted {
-    color: @green;
-  }
-
-
-  &.list {
-    color: @list-color;
-    font-weight: bold;
-  }
-
-
-
-  &.raw{
-    background-color: rgba(245, 250, 252, 0.65);
-    color: @dark-ink;
-
-    &.inline {
-      color: @green;
+    &.changed {
+        color: @purple;
     }
-  }
-
-  &.strike {
-    text-decoration: line-through;
-  }
-  &.underline {
-    text-decoration: underline;
-  }
-
-
-
-  &.heading {
-    color: @heading-ink;
-    font-weight: normal;
-    position: relative;
-
-    &.heading-1 {
-      font-size: 135%;
-      bottom: 0.35em;
-      opacity:1.0;
+    &.deleted {
+        color: @red;
     }
-
-    &.heading-2 {
-      font-size:125%;
-      bottom: 0.25em;
-      opacity:0.95;
+    &.italic {
+        color: @emphasize-color;
+        font-style: italic;
+    }
+    &.bold {
+        color: @bold-color;
+        font-weight: bold;
+    }
+    &.heading .punctuation.definition.heading {
+        color: @blue;
+    }
+    &.inserted {
+        color: @green;
+    }
+    &.list {
+        color: @list-color;
+        font-weight: bold;
+    }
+    &.raw {
+        background-color: rgba(245, 250, 252, 0.65);
+        color: @dark-ink;
+        &.inline {
+            color: @green;
+        }
+    }
+    &.strike {
+        text-decoration: line-through;
+    }
+    &.underline {
+        text-decoration: none;
+        border-bottom: @invisible-ink;
+        border-width: 0px 0px 1px 0px;
+        border-style: none none solid none;
 
     }
-
-    &.heading-3 {
-      font-size:115%;
-      bottom: 0.15em;
-      opacity:0.90;
-
+    &.heading {
+        color: @heading-ink;
+        font-weight: normal;
+        position: relative;
+        &.heading-1 {
+            font-size: 135%;
+            bottom: 0.35em;
+            opacity: 1.0;
+        }
+        &.heading-2 {
+            font-size: 125%;
+            bottom: 0.25em;
+            opacity: 0.95;
+        }
+        &.heading-3 {
+            font-size: 115%;
+            bottom: 0.15em;
+            opacity: 0.90;
+        }
+        &.heading-4,
+        &.heading-5,
+        &.heading-6 {
+            font-size: 105%;
+            bottom: 0.05em;
+            opacity: 0.85;
+        }
+        // marker of headings
+        &.marker {
+            color: fade(@heading-ink, 55%);
+        }
     }
-
-    &.heading-4, &.heading-5, &.heading-6 {
-      font-size:105%;
-      bottom: 0.05em;
-      opacity:0.85;
-    }
-
-    // marker of headings
-    &.marker {
-      color: fade(@heading-ink, 55%);
-    }
-
-
-  }
-
-
 }
-
-
 .quote {
-  color: @quote-color;
-  font-style: italic;
+    color: @quote-color;
+    font-style: italic;
+    // italics inside quotes/blockquotes
+    .italic {
+        color: @emphasize-quote-color;
+    }
+    .bold {
+        color: @bold-quote-color;
+        font-weight: bold;
+    }
+}
+.gfm {
+    .markup.heading {
+        font-weight: normal;
+    }
+    &.variable {
+        color: @blue;
+    }
+    &.entity {
+        color: @light-ink;
+    }
 
-  // italics inside quotes/blockquotes
-  .italic {
-    color: @emphasize-quote-color;
-  }
-
-  .bold {
-    color: @bold-quote-color;
-    font-weight: bold;
-  }
-
-
+    &.punctuation.definition {
+    &.begin, &.end {
+        color: @very-light-ink;
+    }
 }
 
-.source.gfm .markup.heading{
-  font-weight: normal;
+    &.username {
+        // name after @ in citation
+        color: @citation-name-color;
+    }
+    // citation
+    &.mention {
+        // @ symbol before citation
+        color: @citation-symbol-color;
+    }
+    &.list {
+        color: @list-color;
+        font-weight: bold;
+    }
 }
-
-.gfm.variable {
-  color: @blue;
-}
-
-
-.gfm.entity {
-  color: @light-ink;
-}
-
-.gfm.username{
-  // name after @ in citation
-  color: @citation-name-color;
-}
-
-// citation
-.gfm.mention{
-  // @ symbol before citation
-  color: @citation-symbol-color;
-}
-
-.gfm.list {
-  color: @list-color;
-  font-weight: bold;
-}
-
 .pfm.math {
-
-  .gfm.support {
-    color: darken(@green, 10%);
-  }
-
-  background: lighten(@green,50%);
-  color: @green;
+    .gfm.support {
+        color: darken(@green, 10%);
+    }
+    background: lighten(@green,50%);
+    color: @green;
 }
-
 .pfm.definition {
-  background: lighten(@blue,30%);
-
-    .leading-whitespace{
-      background: lighten(@blue,30%);
-  }
+    background: lighten(@blue,30%);
+    .leading-whitespace {
+        background: lighten(@blue,30%);
+    }
 }

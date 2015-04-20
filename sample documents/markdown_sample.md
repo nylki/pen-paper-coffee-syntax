@@ -1,6 +1,6 @@
 
 #Random Article
-Far far away, behind the word mountains, far from the countries *Vokalia* and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the *Semantics*, a large language ocean.
+Far far away, behind the word mountains, far from the countries *Vokalia* and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the **sad** coast of the *Semantics*, a large language ocean.
 And here is a [link](https://github.com/nylki/PenPaperCoffee-atom-syntax) just for you. Now lets go over to some quotes and citations.
 
 ## On Rivers of Words
