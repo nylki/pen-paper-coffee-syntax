@@ -1,11 +1,8 @@
 
 #Random Article
-
 Far far away, behind the word mountains, far from the countries *Vokalia* and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the codeast of the *Semantics*, a large language ocean.
-
 And here is a [link](https://github.com/nylki/PenPaperCoffee-atom-syntax)
 just for you. Now lets go over to some quotes and citations:
-
 
 
 ## On Rivers of Words
@@ -14,7 +11,7 @@ A small river named Duden flows by their place and supplies it with the necessar
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 As somebody said in the book [@randomCitation2014, p.22]:
 
-> "But nothing the copy said could convince her and so it didn’t take long  until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries *Vokalia and Consonantia*, there live the blind texts."
+> "But nothing the copy said could convince her and so it didn’t take long  until a few insidious *Copy Writers* ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."[@author2015]
 
 
 ### A heading

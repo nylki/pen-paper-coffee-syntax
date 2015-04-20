@@ -72,19 +72,7 @@
         }
     }
 }
-.quote {
-    color: @quote-color;
-    font-style: italic;
-    // italics inside quotes/blockquotes
-    .italic{
-        font-style: italic;
-        color: @emphasize-quote-color;
-    }
-    .bold {
-        color: @bold-quote-color;
-        font-weight: bold;
-    }
-}
+
 .gfm {
     .markup.heading {
         font-weight: normal;
@@ -99,12 +87,12 @@
     &.punctuation.definition {
     &.begin, &.end {
         color: @very-light-ink;
+        }
     }
-}
 
     &.username {
         // name after @ in citation
-        color: @citation-name-color;
+        color:  @citation-name-color;
     }
     // citation
     &.mention {
@@ -116,6 +104,22 @@
         font-weight: bold;
     }
 }
+
+.quote {
+    color: @quote-color;
+    font-style: italic;
+    // italics inside quotes/blockquotes
+    .italic{
+        font-style: italic;
+        color: @emphasize-quote-color;
+    }
+    .bold {
+        color: @bold-quote-color;
+        font-weight: bold;
+    }
+
+}
+
 .pfm.math {
     .gfm.support {
         color: darken(@green, 10%);
