@@ -11,15 +11,22 @@
 
 @heading-ink: @dark-ink;
 
-@emphasize-color:   rgb(8, 123, 172);
-@bold-color:        darken(@emphasize-color, 10%);
-
-
 @quote-color:         rgb(121, 75, 22);
 @quote-support-color: @very-light-ink;
 
 @citation-symbol-color: rgba(205, 118, 42, 0.43);
 @citation-name-color:   rgb(170, 92, 8);
+
+//old @emphasize-color:   rgb(8, 123, 172);
+@emphasize-color: spin(saturate(@light-ink, 25%), -7);
+@emphasize-quote-color: spin(saturate(@quote-color, 60%), -20);
+
+
+@bold-color:        darken(@emphasize-color, 10%);
+@bold-quote-color:  darken(@emphasize-quote-color, 5%);
+
+
+
 
 
 @paperwhite:  rgb(248, 246, 241);

@@ -17,6 +17,12 @@
   font-weight: bold;
   }
 
+
+
+
+
+
+
   &.heading .punctuation.definition.heading {
     color: @blue;
   }
@@ -57,7 +63,7 @@
     position: relative;
 
     &.heading-1 {
-      font-size: 140%;
+      font-size: 135%;
       bottom: 0.35em;
       opacity:1.0;
     }
@@ -97,6 +103,16 @@
 .quote {
   color: @quote-color;
   font-style: italic;
+
+  // italics inside quotes/blockquotes
+  .italic {
+    color: @emphasize-quote-color;
+  }
+
+  .bold {
+    color: @bold-quote-color;
+    font-weight: bold;
+  }
 
 
 }
