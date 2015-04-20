@@ -1,0 +1,26 @@
+.source .js {
+ &.brace.round, &.brace.curly {
+     color: darken(@very-light-ink, 5%);
+ }
+
+ &.punctuation.terminator.statement {
+      color: @light-ink;
+}
+
+&.punctuation.definition.parameters {
+  &.end, &.begin
+  {
+    color: darken(@very-light-ink, 5%);
+  }
+}
+&.delimiter.method.period {
+  color: @very-light-ink;
+}
+
+// `this` keyword in JS
+&.variable.language.js {
+  color: @cyan;
+}
+
+
+}
