@@ -99,9 +99,18 @@ atom-text-editor::shadow, :host {
 
 .storage {
   color: @blue;
-  &.todo {
+  &.todo, &.idea, &.fixme, &.hack {
+    // TODO
+    // FIXME
+    // IDEA
+    // HACK asdsadasdasdasdasdasd
+
     color: @purple;
-    background-color: rgba(255, 255, 0, 0.06);
+    background-color: rgba(255, 255, 0, 0.1);
+    text-decoration: none;
+    border-bottom: @invisible-ink;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none dotted none;
   }
 }
 
@@ -179,10 +188,18 @@ atom-text-editor::shadow, :host {
 
     &.string,
     &.variable,
-    &.parameters,
     &.array {
 
     }
+
+
+      &.parameters, &.arguments {
+        &.end, &.begin
+        {
+          color: @very-light-ink;
+        }
+      }
+
 
 
     &.heading,
@@ -276,7 +293,7 @@ atom-text-editor::shadow, :host {
 }
 
 .none {
-  color: @syntax-text-color;
+  color: red;
 }
 
 
