@@ -103,6 +103,49 @@
         color: @list-color;
         font-weight: bold;
     }
+
+    &.critic {
+
+      &.addition {
+        color: @green;
+        &.marker {
+            color: fade(@green, 50%) !important;
+        }
+      }
+
+      &.deletion {
+          color:  @red;
+      }
+      .deletion.marker {
+          color: fade(@red, 50%) !important;
+      }
+
+
+      &.substitution {
+        color:   @orange;
+        &.marker {
+            color: fade(@orange, 50%) !important;
+        }
+        &.operator {
+            color: darken(@orange, 10%) !important;
+        }
+      }
+
+      &.comment {
+        color: @comment-ink;
+        &.marker {
+            color: fade(@comment-ink, 50%) !important;
+        }
+      }
+
+      &.highlight {
+          color: @blue;
+        &.marker {
+            color: fade(@blue, 50%) !important;
+        }
+      }
+
+    }
 }
 
 .comment.quote {
@@ -122,7 +165,11 @@
         color: @very-light-ink;
     }
 
+
+
 }
+
+
 
 .pfm.math {
     .gfm.support {

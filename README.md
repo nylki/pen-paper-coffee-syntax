@@ -14,6 +14,9 @@ When you want to cite stuff from eg. a bibtex file, I find a great package to us
 
 ![markdown with zen mode](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
 
+support for critic markup:
+![critic markup](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/criticmarkup.png)
+
 ![css screenshot](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
 
 The screenshots below  are a bit outdated now, (the gutter color is lighter now, as the screenshots above):
