@@ -74,6 +74,10 @@
 }
 
 .gfm {
+    .support {
+        color:@very-light-ink;
+    }
+
     .markup.heading {
         font-weight: normal;
     }
@@ -161,10 +165,6 @@
         font-weight: bold;
     }
 
-    .support {
-        color: @very-light-ink;
-    }
-
 
 
 }
@@ -201,10 +201,16 @@
   }
 
   &.footnote {
-    position: relative;
-    top: -0.5em;
-    font-size: 70%;
-    font-weight:900;
+    // position: relative;
+    // top: -0.5em;
+    // font-size: 70%;
+    // font-weight:900;
+    // so far comes from language-pfm
+
+    font-style: normal;
+    vertical-align: super;
+    font-size: 85%;
+    color:@ink;
   }
 
 }
