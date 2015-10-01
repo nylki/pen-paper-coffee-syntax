@@ -28,7 +28,7 @@ The screenshots below  are a bit outdated now, (the gutter color is lighter now,
 ## changes
 ### 2. October 2015
 Due to rendering issues in Atom, I reduced the increased fonts for headings. It made too many problems unfortunately :/
-They are still increased, but more subtle and shouldnt make that many problems with cursor positioning and long headings anymore.
+If the issues are resolved I would love to get the increased heading sizes back! (you still can get the *old* version at: https://github.com/nylki/pen-paper-coffee-syntax/releases/tag/v0.9.1 if you don't mind the strange cursor positionings and the problems listed in the issue below)
 Relevant issues:
 
 - [https://github.com/nylki/pen-paper-coffee-syntax/issues/20#issuecomment-144845830](https://github.com/nylki/pen-paper-coffee-syntax/issues/20#issuecomment-144845830)
