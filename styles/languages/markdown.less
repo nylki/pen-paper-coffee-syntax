@@ -43,28 +43,36 @@
     &.heading {
         color: @heading-ink;
         font-weight: normal;
-        position: relative;
+        // position: relative;
         &.heading-1 {
-            font-size: 135%;
-            bottom: 0.35em;
+            font-weight: 900;
+            // font-size: 105%;
+            // font-size: 135%;
+            // bottom: 0.35em;
             opacity: 1.0;
         }
         &.heading-2 {
-            font-size: 125%;
-            bottom: 0.25em;
-            opacity: 0.95;
+            font-weight: 800;
+            // font-size: 102%;
+            // font-size: 125%;
+            // bottom: 0.25em;
+            // opacity: 0.95;
+            opacity: 0.9;
         }
         &.heading-3 {
-            font-size: 115%;
-            bottom: 0.15em;
-            opacity: 0.90;
+            font-weight: 700;
+            // font-size: 115%;
+            // bottom: 0.15em;
+            // opacity: 0.90;
+            opacity: 0.85;
         }
         &.heading-4,
         &.heading-5,
         &.heading-6 {
-            font-size: 105%;
-            bottom: 0.05em;
-            opacity: 0.85;
+            // font-size: 105%;
+            // bottom: 0.05em;
+            // opacity: 0.80;
+            opacity: 0.80;
         }
         // marker of headings
         &.marker {
@@ -197,19 +205,20 @@
   }
 
   &.citation{
-    background: fadeout(@citation-name-color,90%);
+    // background: fadeout(@citation-name-color,90%);
   }
 
   &.footnote {
-    // position: relative;
-    // top: -0.5em;
-    // font-size: 70%;
+    position: relative;
+    top: -0.5em;
+    font-size: 85%;
     // font-weight:900;
     // so far comes from language-pfm
 
-    font-style: normal;
-    vertical-align: super;
-    font-size: 85%;
+    // would be better?
+    // font-style: normal;
+    // vertical-align: super;
+    // font-size: 85%;
     color:@ink;
   }
 
