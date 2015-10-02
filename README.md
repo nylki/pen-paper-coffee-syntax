@@ -19,8 +19,6 @@ support for critic markup:
 
 ![css screenshot](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_4.png)
 
-The screenshots below  are a bit outdated now, (the gutter color is lighter now, as the screenshots above):
-
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_2.png)
 
 ![A screenshot of your theme](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_3.png)
