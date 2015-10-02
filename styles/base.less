@@ -20,13 +20,15 @@ atom-text-editor::shadow, :host {
   .invisible-character {
     color: @invisible-ink;
   }
-
+  
+  .gutter-container {
+    // add a small margin right to the gutter
+    margin-right: 0.8em;
+  }
+  
     .gutter {
       background-color: @syntax-gutter-background-color;
       color: @syntax-gutter-text-color;
-
-      // add a small margin right to the gutter
-      margin-right: 0.8em;
 
       .line-number {
         -webkit-font-smoothing: antialiased;
