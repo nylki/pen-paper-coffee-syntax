@@ -20,12 +20,12 @@ atom-text-editor::shadow, :host {
   .invisible-character {
     color: @invisible-ink;
   }
-  
+
   .gutter-container {
     // add a small margin right to the gutter
     margin-right: 0.8em;
   }
-  
+
     .gutter {
       background-color: @syntax-gutter-background-color;
       color: @syntax-gutter-text-color;
@@ -345,6 +345,6 @@ background-color: rgba(236, 13, 132, 0.35);
 // add a bigger margin right to the gutter if markdown
 // for regular margin for other files, see above, where general
 // gutter colors are defined
-atom-text-editor[data-grammar="source gfm"]::shadow .gutter {
+atom-text-editor[data-grammar="source gfm"]::shadow .gutter-container {
     margin-right:2em;
 }
