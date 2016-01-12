@@ -1,0 +1,30 @@
+.source.json {
+  .meta.structure.dictionary.json {
+    & > .string.quoted.json {
+      & > .punctuation.string {
+        // "" etc.
+         background-color: rgba(182, 137, 215, 0);
+         opacity: 0.75;
+      }
+      // key
+       background-color: rgba(182, 137, 215, 0);
+      color: @quote-support-color;
+    }
+  }
+
+  .meta.structure.dictionary.json, .meta.structure.array.json {
+    & > .value.json > .string.quoted.json,
+    & > .value.json > .string.quoted.json > .punctuation {
+      // value
+      background-color: rgba(255, 204, 0, 0.0);
+      color: @quote-color;
+    }
+
+    & > .constant.language.json {
+      // numbers / bools
+      color: @red;
+      background-color: rgba(182, 137, 215, 0);
+
+    }
+  }
+}
