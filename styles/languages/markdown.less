@@ -9,7 +9,9 @@
         color: @emphasize-color;
         font-style: italic;
     }
-    &.bold {
+    &.bold,
+    &.heading,
+    &.strong.emphasis {
         color: @bold-color;
         font-weight: bold;
     }
@@ -20,8 +22,10 @@
         color: @green;
     }
     &.list {
-        color: @list-color;
-        font-weight: bold;
+        & > .punctuation {
+            color: @list-color;
+            font-weight: bold;
+        }
     }
     &.raw {
         background-color: rgba(245, 250, 252, 0.65);
@@ -38,7 +42,6 @@
         border-bottom: @invisible-ink;
         border-width: 0px 0px 1px 0px;
         border-style: none none solid none;
-
     }
     &.heading {
         color: @heading-ink;
@@ -81,86 +84,8 @@
     }
 }
 
-.gfm {
-    .support {
-        color:@very-light-ink;
-    }
 
-    .markup.heading {
-        font-weight: normal;
-    }
-    &.variable {
-        color: @blue;
-    }
-    &.entity {
-        color: @light-ink;
-    }
-
-    &.punctuation.definition {
-    &.begin, &.end {
-        color: @very-light-ink;
-        }
-    }
-
-    &.username {
-        // name after @ in citation
-        color:  @citation-name-color;
-    }
-    // citation
-    &.mention {
-        // @ symbol before citation
-        color: @citation-symbol-color;
-    }
-    &.list {
-        color: @list-color;
-        font-weight: bold;
-    }
-
-    &.critic {
-
-      &.addition {
-        color: @green;
-        &.marker {
-            color: fade(@green, 50%) !important;
-        }
-      }
-
-      &.deletion {
-          color:  @red;
-      }
-      .deletion.marker {
-          color: fade(@red, 50%) !important;
-      }
-
-
-      &.substitution {
-        color:   @orange;
-        &.marker {
-            color: fade(@orange, 50%) !important;
-        }
-        &.operator {
-            color: darken(@orange, 10%) !important;
-        }
-      }
-
-      &.comment {
-        color: @comment-ink;
-        &.marker {
-            color: fade(@comment-ink, 50%) !important;
-        }
-      }
-
-      &.highlight {
-          color: @blue;
-        &.marker {
-            color: fade(@blue, 50%) !important;
-        }
-      }
-
-    }
-}
-
-.comment.quote {
+.quote {
     color: @quote-color;
     font-style: italic;
     // italics inside quotes/blockquotes
@@ -172,56 +97,189 @@
         color: @bold-quote-color;
         font-weight: bold;
     }
-
-
-
 }
 
-.pfm {
-  &.math {
-    .gfm.support {
-      color: darken(@green, 10%);
-    }
-
-    .punctuation.arguments{
-      color: lighten(@red, 5%);
-    }
-
-    .tex {
-      &.constant {
-        color: @orange;
-        &.numeric {
-          color: @green;
+.gfm, .pfm, .text.md {
+    .md, .gfm, .pfm {
+        &.support {
+            color:@very-light-ink;
         }
-      }
+        
+        &.markup.heading {
+            font-weight: normal;
+        }
+        &.variable {
+            color: @blue;
+        }
+        &.entity {
+            color: @light-ink;
+        }
+        &.punctuation {
+            color: @ink;
+        }
+        &.punctuation.definition {
+            &.begin, &.end {
+                color: @very-light-ink;
+            }
+        }
+        
+        &.username {
+            // name after @ in citation
+            color:  @citation-name-color;
+        }
+        // citation
+        &.link, &.mention {
+            // @ symbol before citation
+            color: @citation-symbol-color;
+        }
+        // all kind of lists
+        // variable.list is for pfm/gfm
+        &.list {
+            
+            &.variable {
+                color: @list-color;
+                font-weight: bold;
+            }
+            > .punctuation {
+                font-weight: bold;
+                opacity: 1;
+                color: @list-color;
+                
+                .checkbox {
+                    color: @list-color;
+                    background: fade(@list-color, 5%);
+                }
+            }
+            
+            &.unordered,
+            &.ordered {}
+                
+                &.task {
+                    &.completed {
+                        color: @ink;
+                        opacity: 0.333;
+                        
+                        .code {
+                            background: transparent;
+                            color: @ink;
+                        }
+                        
+                        .todo,
+                        .review {
+                            color: inherit;
+                        }
+                        
+                        .fixme {
+                            background: transparent;
+                            outline: none;
+                            color: inherit;
+                        }
+                    }
+                }
+                
+                &.empty {
+                    .punctuation {
+                        color: @list-color;
+                    }
+                }
+            }
+            
+            &.critic {
+                
+                &.addition {
+                    color: @green;
+                    &.marker {
+                        color: fade(@green, 50%) !important;
+                    }
+                }
+                
+                &.deletion {
+                    color:  @red;
+                }
+                .deletion.marker {
+                    color: fade(@red, 50%) !important;
+                }
+                
+                
+                &.substitution {
+                    color:   @orange;
+                    &.marker {
+                        color: fade(@orange, 50%) !important;
+                    }
+                    &.operator {
+                        color: darken(@orange, 10%) !important;
+                    }
+                }
+                
+                &.comment {
+                    color: @comment-ink;
+                    &.marker {
+                        color: fade(@comment-ink, 50%) !important;
+                    }
+                }
+                
+                &.highlight {
+                    color: @blue;
+                    &.marker {
+                        color: fade(@blue, 50%) !important;
+                    }
+                }
+                
+            }
+            &.math {
+                .support {
+                    color: darken(@green, 10%);
+                }
+                
+                .punctuation.arguments{
+                    color: lighten(@red, 5%);
+                }
+                
+                .tex {
+                    &.constant {
+                        color: @orange;
+                        &.numeric {
+                            color: @green;
+                        }
+                    }
+                }
+                
+                background: fadeout(@green,90%);
+                color: @green;
+            }
+            
+            &.definition.block {
+                background: fadeout(@blue,90%);
+            }
+            
+            &.citation{
+                // background: fadeout(@citation-name-color,90%);
+            }
+            
+            &.footnote, &.link, &.auto {
+                &.destination {
+                    .uri {
+                        // Same as general .underline for markups
+                        text-decoration: none;
+                        border-bottom: @invisible-ink;
+                        border-width: 0px 0px 1px 0px;
+                        border-style: none none solid none;
+                    }
+                }
+                
+                // for now disabled as it is not reliable yet
+                // position: relative;
+                // top: -0.5em;
+                // font-size: 85%;
+                // font-weight:900;
+                // so far comes from language-pfm
+                
+                // would be better?
+                // font-style: normal;
+                // vertical-align: super;
+                // font-size: 85%;
+                color:@light-ink;
+            }
+        }
+        
     }
-
-    background: fadeout(@green,90%);
-    color: @green;
-  }
-
-  &.definition.block {
-    background: fadeout(@blue,90%);
-  }
-
-  &.citation{
-    // background: fadeout(@citation-name-color,90%);
-  }
-
-  &.footnote {
-
-    // for now disabled as it is not reliable yet
-    // position: relative;
-    // top: -0.5em;
-    // font-size: 85%;
-    // font-weight:900;
-    // so far comes from language-pfm
-
-    // would be better?
-    // font-style: normal;
-    // vertical-align: super;
-    // font-size: 85%;
-    color:@ink;
-  }
-
-}
