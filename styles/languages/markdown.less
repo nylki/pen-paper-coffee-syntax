@@ -21,6 +21,19 @@
             opacity: 0.5;
         }
     }
+    &.quote {
+        color: @quote-color;
+        font-style: italic;
+        // italics inside quotes/blockquotes
+        .italic{
+            
+            color: @emphasize-quote-color;
+        }
+        .bold,.strong{
+            color: @bold-quote-color;
+            font-weight: bold;
+        }
+    }
     
     &.heading .punctuation.definition.heading {
         color: @blue;
@@ -91,20 +104,6 @@
     }
 }
 
-
-.quote {
-    color: @quote-color;
-    font-style: italic;
-    // italics inside quotes/blockquotes
-    .italic{
-        font-style: italic;
-        color: @emphasize-quote-color;
-    }
-    .bold {
-        color: @bold-quote-color;
-        font-weight: bold;
-    }
-}
 
 .gfm, .pfm, .text.md {
     .md, .gfm, .pfm {
