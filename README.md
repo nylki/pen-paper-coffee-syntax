@@ -24,6 +24,7 @@ support for critic markup:
 
 ## changes
 ### 2. October 2015
+
 Due to rendering issues in Atom, I reduced the increased fonts for headings. It made too many problems unfortunately :/
 If the issues are resolved I would love to get the increased heading sizes back! (you still can get the *old* version at: https://github.com/nylki/pen-paper-coffee-syntax/releases/tag/v0.9.1 if you don't mind the strange cursor positionings and the problems listed in the issue below)
 Relevant issues:

@@ -8,13 +8,20 @@
     &.italic {
         color: @emphasize-color;
         font-style: italic;
+        .punctuation {
+            opacity: 0.6;
+        }
     }
     &.bold,
     &.heading,
     &.strong.emphasis {
         color: @bold-color;
         font-weight: bold;
+        .punctuation {
+            opacity: 0.5;
+        }
     }
+    
     &.heading .punctuation.definition.heading {
         color: @blue;
     }
