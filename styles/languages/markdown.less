@@ -125,16 +125,17 @@
                 color: @very-light-ink;
             }
         }
-        
-        &.username {
+        // Citations, like: [@citekey]
+        &.username, &.reference.variable {
             // name after @ in citation
             color:  @citation-name-color;
         }
-        // citation
-        &.link, &.mention {
+        // language-markdown has .punctutation as child. pfm .mention as sibling
+        &.mention, &.reference.variable > .punctuation {
             // @ symbol before citation
             color: @citation-symbol-color;
         }
+
         // all kind of lists
         // variable.list is for pfm/gfm
         &.list {
@@ -255,9 +256,6 @@
                 background: fadeout(@blue,90%);
             }
             
-            &.citation{
-                // background: fadeout(@citation-name-color,90%);
-            }
             
             &.footnote, &.link, &.auto {
                 &.destination {

@@ -4,7 +4,6 @@ Far far away, behind the word mountains, far from the countries *Vokalia* and Co
 And here is a [link](https://github.com/nylki/PenPaperCoffee-atom-syntax)
 just for you. Now lets go over to some quotes and citations:
 
-
 ## On Rivers of Words
 ### First part
 
