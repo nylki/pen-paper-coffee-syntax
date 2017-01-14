@@ -69,6 +69,14 @@ Don't go around saying{-- to people that--} the world owes you a living. The wor
 
 The following tests should work if you use the atom [language-pfm](https://atom.io/packages/language-pfm)
 
+### code
+
+```.js
+let foo = function bla() {
+    
+}
+```
+
 ### Math
 
 **The following should work**
@@ -82,9 +90,10 @@ x \subset y\\
 x = y
 $$
 
-\[ E = mc^2 \]
 
-$$ E = mc^2 $$
+$$
+E = mc^2
+$$
 
 **The following are not math**
 

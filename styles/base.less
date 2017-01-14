@@ -1,7 +1,6 @@
 @import "syntax-variables";
 
-atom-text-editor,
-atom-text-editor::shadow, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -53,6 +52,8 @@ atom-text-editor::shadow, :host {
     background-color: @syntax-selection-color;
   }
 } // .editor bracket close
+
+
 
 .bracket-matcher .region{
   background-color: rgba(237, 169, 251, 0.61);
@@ -342,6 +343,6 @@ background-color: rgba(236, 13, 132, 0.35);
 // add a bigger margin right to the gutter if markdown
 // for regular margin for other files, see above, where general
 // gutter colors are defined
-atom-text-editor[data-grammar="source gfm"]::shadow .gutter-container {
+atom-text-editor[data-grammar="source gfm"] .gutter-container {
     margin-right:2em;
 }
