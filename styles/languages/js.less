@@ -1,23 +1,23 @@
-.source .js {
- &.brace.round, &.brace.curly {
+.syntax--source .syntax--js {
+ &.syntax--brace.syntax--round, &.syntax--brace.syntax--curly {
      color: darken(@very-light-ink, 5%);
  }
 
- &.punctuation.terminator.statement {
+ &.syntax--punctuation.syntax--terminator.syntax--statement {
       color: @light-ink;
 }
 
 
-&.delimiter.method.period {
+&.syntax--delimiter.syntax--method.syntax--period {
   color: @very-light-ink;
 }
 
-&.delimiter.object.comma {
+&.syntax--delimiter.syntax--object.syntax--comma {
   color: darken(@very-light-ink, 5%);
 }
 
 // `this` keyword in JS
-&.variable.language.js {
+&.syntax--variable.syntax--language.syntax--js {
   color: @cyan;
 }
 

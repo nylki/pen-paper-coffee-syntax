@@ -1,7 +1,7 @@
-.source.json {
-  .meta.structure.dictionary.json {
-    & > .string.quoted.json {
-      & > .punctuation.string {
+.syntax--source.syntax--json {
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
+    & > .syntax--string.syntax--quoted.syntax--json {
+      & > .syntax--punctuation.syntax--string {
         // "" etc.
          background-color: rgba(182, 137, 215, 0);
          opacity: 0.75;
@@ -12,15 +12,15 @@
     }
   }
 
-  .meta.structure.dictionary.json, .meta.structure.array.json {
-    & > .value.json > .string.quoted.json,
-    & > .value.json > .string.quoted.json > .punctuation {
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json, .syntax--meta.syntax--structure.syntax--array.syntax--json {
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
       // value
       background-color: rgba(255, 204, 0, 0.0);
       color: @quote-color;
     }
 
-    & > .constant.language.json {
+    & > .syntax--constant.syntax--language.syntax--json {
       // numbers / bools
       color: @red;
       background-color: rgba(182, 137, 215, 0);
