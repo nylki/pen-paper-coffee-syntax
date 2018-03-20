@@ -3,7 +3,7 @@
 The theme features ~~increased font-sizes for each level of headers~~ (see *changes* on the bottom), several useful, but not distracting syntax highlightings.
 The overall colors are inspired by the soft beige paper you would find in a notebook. While the ink (text color) is a dark blue, all quotes and citations are in a warm brownish orange to contrast them better to your own words. When writing text, not code, I usually set a line height of 1.4 or 1.5 in atoms settings, as you can see in the sample screenshots.
 
-Although the goal of this theme was have a pleasant markdown writing experience, it looks good with other docs too! I personally use it for most of my coding work (JS, HTML, CSS, c++, glsl).
+Although the goal of this theme was to have a pleasant markdown writing experience, it looks good with other docs too! I personally use it for most of my coding work (JS, HTML, CSS, c++, glsl).
 
 The screenshots without gutter and text centering had [Zen](https://atom.io/packages/zen) installed, if you like to have centered text but still see the gutter, treeview and tabs [typewriter](https://atom.io/packages/typewriter) might be for you.
 
