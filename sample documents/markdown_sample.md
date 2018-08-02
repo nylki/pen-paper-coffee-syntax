@@ -74,7 +74,7 @@ The following tests should work if you use the atom [language-pfm](https://atom.
 
 ```.js
 let foo = function bla() {
-    
+
 }
 ```
 
