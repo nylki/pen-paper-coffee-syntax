@@ -57,7 +57,7 @@ Separated they live in Bookmarksgrove right at the coast of the Semantics, a lar
 ### Checklist
 
 - [x] Color some text
-- [] write some text
+- [ ] write some text
 
 
 
