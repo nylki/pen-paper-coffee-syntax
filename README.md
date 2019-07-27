@@ -1,5 +1,5 @@
 # Pen Paper Coffee :pencil2::scroll::coffee:
-![](https://badgen.net/apm/downloads/pen-paper-coffee-syntax) ![](https://badgen.net/apm/stars/linter)
+[![](https://badgen.net/apm/downloads/pen-paper-coffee-syntax)](https://atom.io/themes/pen-paper-coffee-syntax) [![](https://badgen.net/apm/stars/linter)](https://atom.io/themes/pen-paper-coffee-syntax)
 
 *Pen Paper Coffee* is a syntax theme for the text editor [atom](http://atom.io/), which is designed specifically for writing papers, essays etc. in [markdown](https://en.wikipedia.org/wiki/Markdown).
 The theme features ~~increased font-sizes for each level of headers~~ (see *changes* on the bottom), several useful, but not distracting syntax highlightings.
