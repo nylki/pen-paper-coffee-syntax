@@ -11,6 +11,9 @@ The screenshots without gutter and text centering had [Zen](https://atom.io/pack
 
 When you want to cite stuff from eg. a bibtex file, I find a great package to use together with this theme is [autocomplete bibtex](https://github.com/apcshields/autocomplete-bibtex). It's a great help when combining it with [pandoc](https://github.com/jgm/pandoc) for pdf & latex export from markdown. Work great with the [language-pfm](https://github.com/leipert/language-pfm) package.
 
+## VS Code port
+If you are looking for Visual Studio Code version of this theme, take a look: https://github.com/nylki/pen-paper-coffee-vscode
+
 ### screenshots
 
 ![markdown with zen mode](https://raw.githubusercontent.com/nylki/PenPaperCoffee-atom-syntax/master/screenshots/penPaperCoffe_1.png)
